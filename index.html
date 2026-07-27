@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surya Baaskara — Product Builder: UI/UX · IoT · Game Dev</title>
+<meta name="description" content="Portofolio Surya Baaskara">
+<link rel="icon" type="image/svg+xml" href="asset/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="asset/images/avatar.png" alt="" >
+      <span>I Dewa Gede Surya Baaskara<small>Product Builder</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Project</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">
+      Hubungi
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+      <img src="asset/icons/icon-menu.svg" alt="">
+    </button>
+  </div>
+  <div class="nav-drawer" id="navDrawer">
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Portofolio </div>
+    <h1>
+      <span class="line">Portofolio.</span>
+    </h1>
+    <p class="lead">
+      Software Engineer focused on building scalable web applications from frontend to backend, with experience in UI/UX design, IoT systems, and interactive applications.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">Lihat Proyek <img src="asset/icons/icon-arrow.svg" alt=""></a>
+      <a href="#contact" class="btn btn-ghost">Diskusi Proyek</a>
+    </div>
+  </div>
+  
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="asset/images/avatar.png" alt="Ilustrasi profil Surya Abaskara">
+      </div>
+      <div>
+        <div class="eyebrow">About Me</div>
+
+        <div class="about-bio">
+          <p>
+           I Dewa Gede Surya Baaskara | Denpasar, Bali , Indonesia
+        </div>
+        <div class="about-bio">
+          <p>
+           Fresh graduate in Computer Science from Udayana University with experience building full-stack web applications through internships, academic projects, and personal projects. Passionate about developing scalable software from frontend to backend while creating clean, user-focused solutions.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Skills</div>
+      <h2>Building software from idea to implementation.</h2>
+      <p>Select a category to explore my technical skills and development tools.</p>
+    </div>
+
+    <div class="lens" id="skillsLens" style="margin-bottom:32px;">
+      <div class="lens-thumb" id="skillsLensThumb"></div>
+      <button class="is-active" data-target="fe">Front End</button>
+      <button data-target="be">Back End</button>
+      <button data-target="en">More</button>
+    </div>
+
+    <div class="skills-panels">
+      <div class="skill-panel is-active" data-panel="fe">
+        <div class="skill-panel-head">
+          <h3>Front End</h3>
+        </div>
+        <div class="chip-grid" style="--accent-chip:var(--uiux)">
+          <span class="chip">Figma</span>
+          <span class="chip">HTML5</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Tailwind CSS</span>
+          <span class="chip">Next JS</span>
+        </div>
+      </div>
+      <div class="skill-panel" data-panel="be">
+        <div class="skill-panel-head">
+          <h3>Back End</h3>
+        </div>
+        <div class="chip-grid" style="--accent-chip:var(--iot)">
+          <span class="chip">PHP</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">Firebase</span>
+          <span class="chip">Git</span>
+        </div>
+      </div>
+      <div class="skill-panel" data-panel="en">
+        <div class="skill-panel-head">
+          <h3>Engineering</h3>
+        </div>
+        <div class="chip-grid" style="--accent-chip:var(--game)">
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Arduino / ESP32</span>
+          <span class="chip">Unity</span>
+          <span class="chip">2D Pixel Art</span>
+          <span class="chip">Software Architecture</span>
+          <span class="chip">System Design</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">PROJECT</div>
+      <h2>Projects I've Built</h2>
+      <p>Use the filters to browse projects by category</p>
+    </div>
+
+    <div class="projects-toolbar">
+      <div class="lens" id="projectsLens">
+        <div class="lens-thumb" id="projectsLensThumb"></div>
+        <button class="is-active" data-target="all">ALL</button>
+        <button data-target="uiux">UI/UX</button>
+        <button data-target="iot">IoT</button>
+        <button data-target="game">Game Dev</button>
+        <button data-target="design">Design</button>
+      </div>
+      <span class="project-count" id="projectCount">Project</span>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card" data-discipline="uiux" style="--card-accent:var(--uiux)">
+        <div class="project-thumb"><img src="asset/images/Seasave.png" alt="Tampilan wireframe aplikasi mobile"></div>
+        <div class="project-body">
+          <span class="project-tag">UI/UX Design</span>
+          <h3>SeaSave - Marine Safety App</h3>
+          <p>A mobile application designed to help fishermen respond quickly and effectively during emergencies at sea.</p>
+          <div class="project-stack"><span>Figma</span><span>Design System</span></div>
+          <a href="https://www.figma.com/design/6zrLT0MzeaK9hEMpICecuE/TEAM-FIREFLY-ICONIC?node-id=0-1&t=UOm3Dp9GtPlnEYAQ-1" class="project-link">View Case Study <img src="asset/icons/icon-external.svg" alt=""></a>
+        </div>
+      </article>
+
+      <article class="project-card" data-discipline="uiux" style="--card-accent:var(--uiux)">
+        <div class="project-thumb"><img src="asset/images/Edume.png" alt="Tampilan wireframe aplikasi mobile"></div>
+        <div class="project-body">
+          <span class="project-tag">UI/UX Design</span>
+          <h3>Edume - Character Based Learning App</h3>
+          <p>An educational platform that combines engaging 2D characters with school learning to improve student motivation.</p>
+          <div class="project-stack"><span>Figma</span><span>Design System</span></div>
+          <a href="https://www.figma.com/design/TjmJpLriW3u9fOSpZ5lbVX/TEAM-FIREFLY-INVENTION?node-id=0-1&t=xRsiynNjtfX6bNb7-1" class="project-link">View Case Study <img src="asset/icons/icon-external.svg" alt=""></a>
+        </div>
+      </article>
+
+      <article class="project-card" data-discipline="uiux" style="--card-accent:var(--uiux)">
+        <div class="project-thumb"><img src="asset/images/Elderly.png" alt="Tampilan wireframe aplikasi mobile"></div>
+        <div class="project-body">
+          <span class="project-tag">UI/UX Design</span>
+          <h3>Elderly Friend - Companion App for Seniors</h3>
+          <p>A mobile application designed to monitor seniors' well-being while providing entertainment and daily engagement.</p>
+          <div class="project-stack"><span>Figma</span><span>Design System</span></div>
+          <a href="https://www.figma.com/design/nrpGPiHcinsEFq1uGFWsLp/Invention-2025?node-id=393-13532&t=y0nszNsDieXvC3gS-1" class="project-link">View Case Study <img src="asset/icons/icon-external.svg" alt=""></a>
+        </div>
+      </article>
+
+      <article class="project-card" data-discipline="game" style="--card-accent:var(--game)">
+        <div class="project-thumb"><img src="asset/images/shot.png" alt="Scene game platformer pixel art"></div>
+        <div class="project-body">
+          <span class="project-tag">Game Dev</span>
+          <h3>Galaxy Shooter - Pixel Arcade Shooter</h3>
+          <p>A classic arcade shooter with a retro pixel-art style set in outer space.</p>
+          <div class="project-stack"><span>JavaScript</span><span>Web Based Game</span><span>Aseprite</span></div>
+          <a href="https://github.com/SuryaBaaskara/Galaxy-Shooter-Arcade.git" class="project-link">Priview <img src="asset/icons/icon-external.svg" alt=""></a>
+        </div>
+      </article>
+
+      <article class="project-card" data-discipline="iot" style="--card-accent:var(--iot)">
+        <div class="project-thumb"><img src="asset/images/rose.png" alt="Diagram jaringan hub IoT"></div>
+        <div class="project-body">
+          <span class="project-tag">IoT Development</span>
+          <h3>Aurose - Smart Rose Care System</h3>
+          <p>An automated rose care system powered by ESP32 using the Sugeno Fuzzy algorithm</p>
+          <div class="project-stack"><span>ESP32</span><span>Fuzzy Sugeno</span><span>C++</span><span>JavaScript</span></div>
+          <a href="#" class="project-link">View Case Study <img src="asset/icons/icon-external.svg" alt=""></a>
+        </div>
+      </article>
+
+      <article class="project-card" data-discipline="game" style="--card-accent:var(--game)">
+        <div class="project-thumb"><img src="asset/images/dasjag.png" alt="Peta top-down game"></div>
+        <div class="project-body">
+          <span class="project-tag">Game Dev</span>
+          <h3>Kedas Jagat <small>(In Progress)</small></h3>
+          <p>A story-driven game that encourages players to protect and care for the environment</p>
+          <div class="project-stack"><span>Unity</span><span>C#</span><span>Level Design</span><span>Aseprite</span></div>
+          <a href="#" class="project-link">Preview <img src="asset/icons/icon-external.svg" alt=""></a>
+        </div>
+      </article>
+
+      <article class="project-card" data-discipline="design" style="--card-accent:var(--design)">
+        <div class="project-thumb"><img src="asset/images/djafu.png" alt="Peta top-down game"></div>
+        <div class="project-body">
+          <span class="project-tag">Design</span>
+          <h3>Infografic - Perkembangan AI Manga, Apakah Masih Bisa Disebut Manga?</h3>
+          <p>An infographic discussing whether manga created using AI can still be called manga.</p>
+          <div class="project-stack"><span>Figma</span><span>Infografic</span></div>
+          <a href="https://drive.google.com/file/d/1h7dn9HMjCtIBJZS0n1CgQ357bDMc1pGq/view?usp=sharing" class="project-link">Preview <img src="asset/icons/icon-external.svg" alt=""></a>
+          <a href="https://www.instagram.com/p/DCLmM53y6MK/?img_index=2&igsh=bzUybzNjM255d2k4" class="project-link">Instagram <img src="asset/icons/icon-external.svg" alt=""></a>
+        </div>
+      </article>
+
+      <article class="project-card" data-discipline="design" style="--card-accent:var(--design)">
+        <div class="project-thumb"><img src="asset/images/Cau.png" alt="Peta top-down game"></div>
+        <div class="project-body">
+          <span class="project-tag">Design</span>
+          <h3>Instagram Post - KKN CAUBELAYU 2025</h3>
+          <p>A documentation project showcasing the Instagram post designs created for the 2025 KKN Caubelayu program.</p>
+          <div class="project-stack"><span>Figma</span><span>Instagram Post Design</span></div>
+          <a href="https://www.figma.com/design/iIWaaL2NgfVzrnqtGQRpr8/KKN?node-id=0-1&t=h3zvHyutlwtlihg8-1" class="project-link">Figma <img src="asset/icons/icon-external.svg" alt=""></a>
+          <a href="https://www.instagram.com/kkncaubelayu2025?igsh=bDR1YnUweDBmenlh" class="project-link">Instagram <img src="asset/icons/icon-external.svg" alt=""></a>
+        </div>
+      </article>
+
+    </div>
+     <div class="projects-toolbar">
+    <span></span>
+    <button class="project-expand-btn" id="projectExpandBtn">Expand</button>
+  </div>
+  </div>
+</section>
+
+<!-- EXPERIENNCE-->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Experience</div>
+      <h2>Learning, Building, and Growing.</h2>
+      <p>A collection of my professional experience, academic background, and achievements that have shaped my journey as a developer.</p>
+    </div>
+
+    <div class="experience-list">
+
+      <div class="experience-item">
+        <div class="experience-thumb">
+          <img src="asset/images/bwf.png" alt="PT Contoh Teknologi">
+        </div>
+        <div class="experience-content">
+          <span class="experience-year">2023 — Present</span>
+          <h3>PT Bhakti Widya Farma</h3>
+          <span class="experience-role">Software Developer Intern</span>
+          <p>Designed and developed a web-based Enterprise Resource Planning (ERP) system customized for Bhakti Widya Farma Pharmacy, streamlining financial management, inventory control, procurement, sales transactions, and reporting through a centralized platform.</p>
+          <a class="experience-link" href="https://example.com" target="_blank" rel="noopener">
+            Preview
+            <img src="assets/icons/arrow-up-right.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-thumb">
+          <img src="asset/images/plus.png" alt="Hackathon Nasional">
+        </div>
+        <div class="experience-content">
+          <span class="experience-year">2023</span>
+          <h3>PT PLN Icon Plus SBU Regional Bali dan Nusa Tenggara</h3>
+          <span class="experience-role">Front-End Intern</span>
+          <p>Completed a two-month internship at PLN Icon Plus as a Frontend Developer Intern, contributing to the development of the SIKADEK application.</p>
+          <a class="experience-link" href="https://example.com" target="_blank" rel="noopener">
+            Preview
+            <img src="assets/icons/arrow-up-right.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <span class="eyebrow">CONTACT</span>
+
+      <h2>Contact Person</h2>
+
+      <p>
+      Feel free to contact me through any of the platforms below.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:surya.baaskara06@gmail.com" target="_blank">
+          <img src="asset/icons/email.png" alt="">
+        </a>
+
+        <a href="https://github.com/SuryaBaaskara" target="_blank">
+          <img src="asset/icons/github.png" alt="">
+        </a>
+
+        <a href="https://linkedin.com/in/suryabaaskara" target="_blank">
+          <img src="asset/icons/linkedin.png" alt="">
+        </a>
+
+        <a href="https://instagram.com/suryabaaskara_" target="_blank">
+          <img src="asset/icons/instagram.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Surya Abaskara. Dibangun dari nol.</span>
+    <a href="#top" class="footer-back">Kembali ke atas <img src="asset/icons/icon-arrow.svg" alt=""></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
